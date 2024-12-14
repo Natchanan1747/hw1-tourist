@@ -1,0 +1,36 @@
+/* Element Selectors */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Class Selectors */
+.header {
+    background-color: #2ba47e;
+    color: white;
+    padding: 1rem;
+    border: 0;  
+    width: 100%;     
+}
+/* Descendant Selectors */
+.nav-list li {
+    display: inline;
+    margin-right: 1rem;
+}
+/* Pseudo-class Selectors */
+.nav-list a:link {
+    color:black;
+}
+.nav-list a:hover {
+    color: #ffd700;
+}
+
+/* Footer Selectors */
+footer {     
+    background: #2ba47e;     
+    color: #fff;     
+    text-align: center;     
+    padding: 1rem;         
+    bottom: 0;     
+    width: 100%; 
+}
