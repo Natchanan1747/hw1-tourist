@@ -18,12 +18,33 @@ body {
     margin-right: 1rem;
 }
 /* Pseudo-class Selectors */
-.nav-list a:link {
-    color:black;
-}
 .nav-list a:hover {
     color: #ffd700;
 }
+
+/* Box Model Styles*/
+#events {
+    background-color: rgba(165, 42, 42, 0.386);
+}
+.event-image {
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+}
+.event-info {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.skill-box {
+    margin: 10px;
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
 
 /* Footer Selectors */
 footer {     
