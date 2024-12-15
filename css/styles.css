@@ -93,6 +93,24 @@
             color: #2ba47e;
             text-decoration: none;
         }
+    
+    h2 {
+        text-align: left;
+        margin: 100 px;
+    }
+    #rec {
+        text-align: center;
+    }
+    .rec-info a {
+        color: #2ba47e;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .rec-info a:hover{
+        color: #2ba47e;
+        text-decoration: none;
+        font-size: 20px;
+    }
 
 /* Footer Selectors */
 footer {     
