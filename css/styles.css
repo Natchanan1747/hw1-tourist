@@ -1,6 +1,7 @@
 /* Element Selectors */
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box; 
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -11,9 +12,10 @@
     top: 0;
     background-color: #2ba47e;
     color: white;
+    margin-bottom: 20px;   
     padding: 1rem;
     border: 0;  
-    width: 100%;     
+    max-width: 100%;     
 }
 
 .nav-list li {
@@ -29,6 +31,9 @@
 .nav-list a:hover {
     color: #ffd700;
 }
+.active {
+    color: #ffd700;
+}
 
 /* Box Model Styles*/
 .section {
@@ -37,7 +42,8 @@
 }
 
 /* index styles */
-h2 {
+section > h2 {
+    color: #2ba47e;
     text-align: left;
     margin: 100 px;
 }
@@ -118,26 +124,71 @@ h2 {
             text-decoration: none;
         }
 
-    /* recom styling */
-    #rec {
-        text-align: center;
-    }
-    .rec-info a {
-        color: #2ba47e;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    .rec-info a:hover{
-        text-decoration: none;
-        font-size: 20px;
-    }
+/* recom styling */
+#rec {
+    text-align: center;
+}
+.rec-info a {
+    color: #2ba47e;
+    text-decoration: none;
+    font-size: 17px;
+}
+.rec-info a:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Contact Styles */
+form {
+    display: flex
+    flex-direction column;
+    justify-content: center;
+}
+.button {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: 2px solid #04AA6D; /* Green */
+    transition-duration: 0.4s;
+}
+  
+.button:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;
+}
 
 /* Footer Selectors */
 footer {     
     background: #2ba47e;     
     color: #fff;     
     text-align: center;     
-    padding: 1rem;         
+    padding: 1rem;
+    margin-top: 20px;         
     bottom: 0;     
-    width: 100%; 
+    max-width: 100%; 
+}
+
+/* responsive design */
+/* สำหรับแท็บเล็ต */
+@media (max-width: 768px) {     
+    .grid-container {         
+            grid-template-areas:              
+            "header header"             
+            "nav nav"             
+            "main sidebar"             
+            "footer footer";         
+            grid-template-columns: 1fr 200px;     
+    } 
+}  
+/* สำหรับมือถือ */ 
+@media (max-width: 480px) {     
+    .grid-container {         
+            grid-template-areas:              
+            "header"             
+            "nav"             
+            "main"             
+            "sidebar"             
+            "footer";         
+            grid-template-columns: 1fr;     
+    } 
 }
